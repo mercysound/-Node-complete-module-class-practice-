@@ -1,0 +1,68 @@
+node class..
+https://scict.edossier.app/student-portal/#/home/resources
+for the data base we are using non-relational database is mongodb
+mongodb as a localstorage call cluster.
+Inside  a cluster as many data base can be created.
+URI - Uniform resourse identification - to identify each user id
+mongoose make conneting to dataabase very easy.
+Note: we can connect with database without mongoose but mongoose make it better.
+
+ formal way to connect db
+// to connect database
+// mongoose.connect(URI, (err)=>{
+//   if(err){
+//     console.log("mongoose no gree connect");
+//     console.log(err);
+//   }else{
+//     console.log("mongoose connected succcessfuly");
+//   }
+// })
+
+Standard things to know about when it comes to backend:
+1. schema - The structure of collection(non-relational) or table(relational)
+You use regular expression to validate
+you use query to check what they are sending
+structure check the formation way of sending it.
+to validate both of the server and database
+let userSchema: {
+firstname:{type:String, require: compulsory, currentTimeStamp: help know reg time},
+lastname: String,
+email: {type:String, unique:"goToDataBaseToCheckAva"}
+password: String
+}
+
+2. Model - in case of mongodb is what join schemal (,)and  name of user-collection
+in other word - what collection you want to use and (userSchema) and typeOf struct
+ure.
+
+in the newer version of express it as inbuit.
+middleware is app.use.
+
+we will be mongoose to interact with our mongodb; mongoose can also be use.
+URI - uniform resource identification: this help locate particular source online
+Constrain- determine the type of data..
+Note: to connect with db - can use mongodb installation or mongoose to connect
+
+
+
+
+
+In this example:
+
+The useUnifiedTopology option is used to 
+enable the new unified topology engine introduced in version 4.0.0.
+
+The connection string is a placeholder, and you 
+should replace it with your actual MongoDB connection string.
+
+The MongoClient is created with the new options, and the 
+connection is established using the connect method.
+
+Ensure that you handle errors appropriately and close 
+the MongoDB client when you are done with it.
+
+By making these adjustments, you'll address the
+ deprecation warning related to the useNewUrlParser option.
+
+Question: Would my render or redirect method would not work in post request if i have
+not yet have get method created to the page i'm willing to navigate to
